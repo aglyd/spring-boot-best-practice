@@ -1,5 +1,6 @@
 package cn.javastack.springboot.test;
 
+import cn.javastack.springboot.test.service.TestService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +21,8 @@ public class JavaTest {
 
     @Autowired
     private TestRestTemplate testRestTemplate;
+    @Autowired
+    private TestService testService;
 
     @Test
     public void get() {
@@ -37,5 +40,10 @@ public class JavaTest {
         Assert.assertEquals(result.getCode(), 0);
     }
 
-
+    @Test
+    public void test1(){
+        testService.getUnretr("unret");
+        System.out.println(testService.getRetre("test11"));
+        System.out.println("test1-----end");
+    }
 }

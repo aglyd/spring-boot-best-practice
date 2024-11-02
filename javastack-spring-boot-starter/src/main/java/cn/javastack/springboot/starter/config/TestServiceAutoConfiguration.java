@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ConditionalOnProperty(prefix = "javastack.starter", name = "enabled", havingValue = "true")
+//@Configuration
+//@ConditionalOnProperty(prefix = "javastack.starter", name = "enabled", havingValue = "true")
 public class TestServiceAutoConfiguration {
 
-    @Bean
+//    @Bean
     public TestService testService() {
         return new TestService();
     }
