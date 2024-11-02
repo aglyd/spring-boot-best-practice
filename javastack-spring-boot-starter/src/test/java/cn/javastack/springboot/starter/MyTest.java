@@ -26,7 +26,7 @@ public class MyTest {
     public void test1() throws ExecutionException, InterruptedException {
         System.out.println("test1----start");
         testService.getAscUnre("Ascunret");
-        System.out.println("接收异步返回1："+testService.getAscRetre("Ascret"));
+        System.out.println("接收异步返回："+testService.getAscRetre("Ascret"));
         testService.getAscUnre2("Ascunret22");
         System.out.println("接收异步返回2："+testService.getAscRetre2("Ascret22"));
         System.out.println("-------------------");
